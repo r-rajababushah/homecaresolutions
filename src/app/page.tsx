@@ -1,14 +1,23 @@
-"use client";
-
-import { createClient } from "@/lib/supabase/client";
+import Hero from "@/components/public/Hero";
+import ServicePreview from "@/components/public/ServicePreview";
+import WhyChooseUs from "@/components/public/WhyChooseUs";
+import HowItWorks from "@/components/public/HowItWorks";
+import ServiceAreas from "@/components/public/ServiceAreas";
+import RecentWork from "@/components/public/RecentWork";
+import Reviews from "@/components/public/Reviews";
+import FinalCTA from "@/components/public/FinalCTA";
 
 export default function Home() {
-  const supabase = createClient();
-
   return (
-    <main>
-      <h1>HomeCare Repair</h1>
-      <p>Supabase connected.</p>
-    </main>
+    <>
+      <Hero />
+      <ServicePreview />
+      <WhyChooseUs />
+      <HowItWorks />
+      <ServiceAreas />
+      <RecentWork />
+      <Reviews />
+      <FinalCTA />
+    </>
   );
 }
